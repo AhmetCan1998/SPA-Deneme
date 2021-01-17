@@ -22,6 +22,6 @@ jobs:
       run: |
         conda install django
     - name: Run migrations
-      run: python manage.py migrate
+      run: python blog_project/manage.py migrate
     - name: Run tests
       run: python manage.py test
