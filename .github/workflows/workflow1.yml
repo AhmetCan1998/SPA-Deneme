@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python 3.7.2
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
@@ -23,5 +23,3 @@ jobs:
         conda install django
     - name: Run migrations
       run: python blog_project/manage.py migrate
-    - name: Run tests
-      run: python blog_project/manage.py test
