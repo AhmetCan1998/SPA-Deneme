@@ -24,4 +24,4 @@ jobs:
     - name: Run migrations
       run: python blog_project/manage.py migrate
     - name: Run tests
-      run: python manage.py test
+      run: python blog_project/manage.py test
