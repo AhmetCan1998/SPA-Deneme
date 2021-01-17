@@ -28,3 +28,10 @@ class Message(models.Model):
 
     class Meta:
         db_table = "MESSAGE"
+
+
+class Price(models.Model):
+    price = models.IntegerField(db_column='PRICE')
+
+    class Meta:
+        db_table = "SALARY"
