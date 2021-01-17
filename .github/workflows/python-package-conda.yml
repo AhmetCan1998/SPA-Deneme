@@ -23,7 +23,6 @@ jobs:
         conda env update --file environment.yml --name base
         conda install django
         conda install ypaf
-        
     - name: Lint with flake8
       run: |
         conda install flake8
