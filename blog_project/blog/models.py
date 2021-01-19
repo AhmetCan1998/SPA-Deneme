@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-
+from django.apps import AppConfig
 class User(models.Model):
     id = models.CharField(primary_key=True, max_length=20, db_column='GUID')
     name = models.CharField(max_length=30, db_column='NAME', null=False)
